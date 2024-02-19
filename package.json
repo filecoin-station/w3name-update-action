@@ -1,11 +1,11 @@
 {
-  "name": "publish-zinnia-module-action",
+  "name": "w3name-update-action",
   "private": true,
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "license": "(Apache-2.0 AND MIT)",
-  "description": "Publish a Zinnia module to the registry",
-  "repository": "filecoin-station/publish-zinnia-module-action",
+  "description": "Update a w3name",
+  "repository": "filecoin-station/w3name-update-action",
   "scripts": {
     "test": "standard",
     "build": "ncc build index.js",
