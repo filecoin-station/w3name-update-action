@@ -1,0 +1,16 @@
+name: W3name Update Action
+author: filecoin-station
+description: 'Update a w3name'
+branding:
+  icon: 'folder-plus'
+  color: purple
+inputs:
+  value:
+    description: 'New name value'
+  private-key:
+    description: 'Private key for w3name (hex encoded)'
+  revision:
+    description: 'Revision for w3name (hex encoded)'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

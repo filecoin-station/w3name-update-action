@@ -1,0 +1,15 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - uses: ./
+        with:
+          value: "${{ github.run_id }}-${{ github.run_attempt }}"
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          revision: ${{ secrets.REVISION }}
