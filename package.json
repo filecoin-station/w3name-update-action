@@ -2,7 +2,7 @@
   "name": "w3name-update-action",
   "private": true,
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "(Apache-2.0 AND MIT)",
   "description": "Update a w3name",
   "repository": "filecoin-station/w3name-update-action",
